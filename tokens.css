@@ -1,0 +1,68 @@
+/* =============================================================
+   BADEL design tokens — TRADE, NOT MONEY
+   dark premium • warm ochre • teal success • rust danger
+   ============================================================= */
+
+:root {
+  /* Surfaces */
+  --bg: #0e0e10;
+  --bg-elev: #141417;
+  --surface: #1a1a1f;
+  --surface-2: #212127;
+  --surface-3: #2a2a31;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Text */
+  --text: #f4f1ea;
+  --text-dim: #b7b2a7;
+  --text-mute: #807c73;
+
+  /* Brand */
+  --ochre: #e8a33d;
+  --ochre-deep: #c9821f;
+  --ochre-soft: rgba(232, 163, 61, 0.14);
+  --teal: #2fb59a;
+  --teal-soft: rgba(47, 181, 154, 0.14);
+  --rust: #e0664a;
+  --rust-deep: #c0522f;
+  --rust-soft: rgba(224, 102, 74, 0.14);
+  --blue: #4aa3d8;
+  --violet: #8b7bd8;
+
+  /* Gradients */
+  --grad-brand: linear-gradient(135deg, #e8a33d 0%, #d9752e 100%);
+  --grad-hero: radial-gradient(120% 90% at 50% 0%, #1d1a14 0%, #0e0e10 55%);
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Radii */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.6);
+
+  /* Layout */
+  --nav-h: 64px;
+  --tab-h: 60px;
+  --content-max: 1080px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* Motion */
+  --ease: cubic-bezier(0.32, 0.72, 0.24, 1);
+  --dur: 180ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
